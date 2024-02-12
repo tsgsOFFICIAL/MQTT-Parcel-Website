@@ -36,7 +36,11 @@ function showNotification(notifyTitle, notifyBody) {
 }
 
 function searchIconPressed() {
-    sendNotification("Search icon pressed", "You have just pressed the search bar!");
+    setTimeout(() => {
+        const serachBarValue = document.getElementById("parcel-search-bar").value;
+
+    }, 5000);
+    sendNotification("Search icon pressed", `You have just searched: ${serachBarValue}`);
 }
 
 // document.addEventListener("DOMContentLoaded", () => {
