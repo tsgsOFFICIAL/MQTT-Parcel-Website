@@ -3,6 +3,54 @@ let registration;
 topLevelFunction();
 requestPermission();
 
+// const socket = new WebSocket('ws://127.0.0.1:1883');
+
+// socket.onopen = () => {
+//     console.log('Connected to WebSocket server');
+//     socket.send('Hello, server!');
+// };
+
+// socket.onmessage = (event) => {
+//     console.log('Received message from server:', event.data);
+// };
+
+// socket.onclose = () => {
+//     console.log('Connection closed');
+// };
+
+
+// const mqttClient = mqtt.connect("mqtt://127.0.0.1:1883");
+
+// mqttClient.on('connect', () => {
+//     console.log('Connected to WebSocket server');
+
+//     // Subscribe to a topic
+//     mqttClient.subscribe('topic', (err) => {
+//         if (!err) {
+//             console.log('Subscribed to topic');
+//         } else {
+//             console.error('Error subscribing to topic:', err);
+//         }
+//     });
+
+//     // Publish a message
+//     mqttClient.publish('topic', 'Hello from JavaScript', (err) => {
+//         if (!err) {
+//             console.log('Message published');
+//         } else {
+//             console.error('Error publishing message:', err);
+//         }
+//     });
+// });
+
+// mqttClient.on('message', (topic, message) => {
+//     console.log('Received message:', message.toString());
+// });
+
+// mqttClient.on('error', (error) => {
+//     console.error('WebSocket connection error:', error);
+// });
+
 async function topLevelFunction() {
     registration = await navigator.serviceWorker.getRegistration();
 }
