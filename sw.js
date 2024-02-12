@@ -7,6 +7,8 @@ const assets = [
     './js/cookie.js',
     './js/main.js',
     './img/cookie.svg',
+    './img/cookie.svg',
+    './img/postman_icon.svg',
     './css/animations.css',
     './css/cookie.css',
     './css/index.css',
