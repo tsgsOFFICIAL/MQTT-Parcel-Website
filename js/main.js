@@ -35,6 +35,10 @@ function showNotification(notifyTitle, notifyBody) {
     }
 }
 
+function searchIconPressed() {
+    sendNotification("Search icon pressed", "You have just pressed the search bar!");
+}
+
 // document.addEventListener("DOMContentLoaded", () => {
 //     fetchData();
 
