@@ -33,6 +33,12 @@ header input {
 header input[type=search] {
     flex-grow: 1;
     color: var(--search-text-color);
+    padding: .69rem;
+    font-family: monospace;
+}
+
+header input[type=search]:focus {
+    outline-width: 0;
 }
 
 header input[type=button] {
