@@ -1,0 +1,147 @@
+body>header {
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(//dvow0vltefbxy.cloudfront.net/assets/landing/bg-pattern-92c4a10ff627e5bc43f9914eedb59ec9f80e92a67188cfbc3ea349e7a970c772.png), linear-gradient(to left, #2980b9, #2EB187);
+    align-items: center;
+    gap: 1.69rem;
+    padding: 2.69rem .69rem;
+}
+
+header ol {
+    gap: 1rem;
+}
+
+header ol li {
+    font-size: 1.69rem;
+}
+
+header #search-bar {
+    min-width: 50%;
+    gap: 1rem;
+}
+
+header input {
+    height: 2.69rem;
+    border-radius: .69rem;
+    border: none;
+}
+
+header input[type=search] {
+    flex-grow: 1;
+}
+
+header input[type=button] {
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+header input[type=button]:hover {
+    background-color: hsl(153, 80%, 39%);
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.stable-container {
+    position: relative;
+    padding: .69rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25vh;
+    width: 30vw;
+    border-radius: .5rem;
+    border: .2rem solid purple;
+    transition: all .3s ease;
+}
+
+.stable-container:hover {
+    color: black;
+    cursor: pointer;
+    border-color: white;
+    background-color: #5f645f;
+}
+
+.stable-container h2 {
+    font-size: 2.69rem;
+    color: inherit;
+}
+
+.stable-container>section.header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: .69rem;
+    color: inherit;
+}
+
+.stable-container>section.info {
+    height: 100%;
+    width: 100%;
+    gap: .69rem;
+    color: inherit;
+}
+
+.stable-container .time-text {
+    font-size: 1.69rem;
+}
+
+.stable-container>section * {
+    color: inherit;
+}
+
+.stable-container ol {
+    color: inherit;
+}
+
+.stable-container ol:first-of-type li {
+    text-align: right;
+}
+
+.stable-container ol li {
+    font-size: 1.69rem;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+
+    /* Change flow direction to vertical */
+    .stable-container {
+        width: 40vw;
+        justify-content: space-between;
+    }
+
+    .stable-container>section.header {
+        align-items: flex-start;
+    }
+
+    .stable-container h2 {
+        font-size: 2rem;
+    }
+
+    .stable-container .time-text {
+        font-size: 1.2rem;
+    }
+
+    .stable-container ol li {
+        font-size: 1.2rem;
+    }
+
+    .stable-container>section.info {
+        height: auto;
+    }
+}
