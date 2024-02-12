@@ -1,9 +1,20 @@
 let registration;
 
 topLevelFunction();
+requestPermission();
 
 async function topLevelFunction() {
     registration = await navigator.serviceWorker.getRegistration();
+}
+
+function requestPermission() {
+    if (!('Notification' in window)) {
+        alert('Notification API not supported!');
+        return;
+    }
+
+    Notification.requestPermission(() => {
+    });
 }
 
 async function sendNotification(notifyTitle, notifyBody) {
