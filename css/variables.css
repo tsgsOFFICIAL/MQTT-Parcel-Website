@@ -18,4 +18,5 @@
     --menu-background-color: hsl(199, 24%, 29%);
     --menu-hover-color: hsl(199, 24%, 35%);
     --table-border-color: var(--secondary-color);
+    --search-text-color: hsl(160, 90%, 37%);
 }

@@ -32,6 +32,7 @@ header input {
 
 header input[type=search] {
     flex-grow: 1;
+    color: var(--search-text-color);
 }
 
 header input[type=button] {
