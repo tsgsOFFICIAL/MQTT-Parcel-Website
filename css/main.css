@@ -220,3 +220,7 @@ ol {
 .flex-col.nowrap {
     flex-wrap: nowrap;
 }
+
+.invert {
+    filter: invert(100%);
+}

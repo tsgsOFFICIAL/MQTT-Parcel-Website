@@ -27,11 +27,11 @@
 
             <ol class="flex-row">
                 <li>Tracks: </li>
-                <li class="underline"><a href="/" target="_self">Arduino Packages</a></li>
+                <li class="underline hover"><a href="/" target="_self">Arduino Packages</a></li>
             </ol>
 
             <article id="search-bar" class="flex-row">
-                <input type="search">
+                <input class="underline gradient hover" type="search">
                 <input type="button" value="&#x1F50D;">
             </article>
         </header>
@@ -66,20 +66,28 @@
             </section>
         </article>
 
-        <main></main>
+        <main>
+            <article class="tracking container flex-row">
+
+                <section class="flex-col">
+                    <small>Parcel is at sorting facility</small>
+                    <img class="invert small-icon" src="/img/postman_icon.svg" alt="postman icon">
+                </section>
+            </article>
+        </main>
 
         <footer>
             <h2>&copy; 2023 - 2023 <a href="/" target="_self">Marcus, Casper & Jesper Co.</a>, All Rights Reserved.</h2>
         </footer>
 
         <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener("load", () => {
-                    navigator.serviceWorker.register('sw.js', { scope: './' })
-                        .then(res => console.log("service worker registered"))
-                        .catch(err => console.log("service worker not registered", err));
-                });
-            }
+            // if ('serviceWorker' in navigator) {
+            //     window.addEventListener("load", () => {
+            //         navigator.serviceWorker.register('sw.js', { scope: './' })
+            //             .then(res => console.log("service worker registered"))
+            //             .catch(err => console.log("service worker not registered", err));
+            //     });
+            // }
         </script>
     </body>
 </html>
