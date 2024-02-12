@@ -21,7 +21,7 @@ async function sendNotification(notifyTitle, notifyBody) {
 }
 
 function showNotification(notifyTitle, notifyBody) {
-    const notifyImg = `./assets/icons/128x128.png`;
+    const notifyImg = `./assets/icons/icon-128x128.png`;
 
     const payload = {
         body: notifyBody,
