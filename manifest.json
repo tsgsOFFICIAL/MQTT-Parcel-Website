@@ -5,8 +5,8 @@
     "background_color": "#353535",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "/Bonder-vs-Display",
-    "start_url": "https://tsgsOFFICIAL.github.io/Bonder-vs-Display/",
+    "scope": "/MQTT-Parcel-Website",
+    "start_url": "https://tsgsOFFICIAL.github.io/MQTT-Parcel-Website/",
     "icons": [
         {
             "src": "assets/icons/16x16.png",
